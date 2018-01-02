@@ -1,7 +1,4 @@
 class Actor < ActiveRecord::Base
-  def change
-    create_table :actor do |t|
-      t.string :first_name
-      t.string :last_name
-  end
+  has_many :first_name
+  has_many :last_name
 end
